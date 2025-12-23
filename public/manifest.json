@@ -1,0 +1,16 @@
+{
+  "short_name": "MSU Prep",
+  "name": "MSU Exam Prep Tracker",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#F2F2F7",
+  "display": "standalone",
+  "theme_color": "#F2F2F7",
+  "orientation": "portrait"
+}
