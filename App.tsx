@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Calendar, Layers, BookOpen, ChevronLeft, ChevronRight, 
-  Home, Shuffle, Zap, Scale, MessageCircle, Moon, Target, Settings, Plus, Timer, Download, Flame
+  Home, Shuffle, Zap, Scale, MessageCircle, Moon, Target, Settings, Plus, Timer, Flame
 } from 'lucide-react';
 import { DragDropContext, Droppable, Draggable, DropResult } from '@hello-pangea/dnd';
 import { INITIAL_SCHEDULE } from './constants';
@@ -84,9 +84,6 @@ const App: React.FC = () => {
     // Check if streak is broken (more than 1 day missed)
     if (lastStreakDate) {
        const today = new Date();
-       const last = new Date(lastStreakDate);
-       const diffTime = Math.abs(today.getTime() - last.getTime());
-       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
        
        const todayStr = today.toISOString().split('T')[0];
        
